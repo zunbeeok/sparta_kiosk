@@ -7,4 +7,7 @@ package order
 
      };
 
+    fun addCart(){
+        //장바구니에 추가하는 기능.
+    };
 }
