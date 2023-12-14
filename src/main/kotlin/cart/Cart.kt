@@ -1,6 +1,6 @@
 package cart
 
-import food.Food
+import data.Food
 
 interface Cart {
     // 주문할 음식 리스트.
@@ -15,8 +15,10 @@ interface Cart {
     // cartList의 배열을 반환한다.
     fun getCartList():List<Food>;
 
-    // cartList의 배열을 출력해준다.
-    fun printCartList();
+    // cartList의 총금액을 반환한다.
+    fun getTotalPrice():Int;
 
+    // 카트 목록을 비우는 함수.
+    fun totalDeleteCart():Unit;
 
 }

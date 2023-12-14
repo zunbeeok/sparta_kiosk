@@ -1,17 +1,17 @@
 package menu
 
-import food.Food
+import data.Food
 
 
 interface Menu{
     // 메모리로 보관하는 메뉴 내역.
     val foodList:HashMap<String,List<Food>>;
 
-    //메뉴를 조회한다.
-    fun getMenu(category:String):List<Food>;
+    //메뉴를 출력한다.
+    fun printMenu(category:String):Unit;
 
-    //카테고리를 조회한다.
-    fun getCategory():List<String>;
+    //카테고리를 출력한다.
+    fun printCategory():Unit;
 
 //    fun setMenu();
 

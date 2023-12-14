@@ -1,4 +1,4 @@
-package food
+package data
 
 data class Food(
     val index:Int,
