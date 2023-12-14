@@ -1,4 +1,4 @@
 package payment
 
-class PaymentService:Payment {
-}
+//class PaymentService:Payment {
+//}
