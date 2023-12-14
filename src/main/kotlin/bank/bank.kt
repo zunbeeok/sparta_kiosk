@@ -23,6 +23,7 @@ interface Bank {
         if((first == 2 || first ==1 )&& (last == 0 || last ==1)) return false;
         return true;
     }
+
     //은행별 포인트를 리턴하는 타입.
     fun getPointPercent(): Int {
         return pointPercent;
@@ -34,8 +35,10 @@ interface Bank {
         return false;
     };
 
-    fun pay(name: String, price: Int): String {
+    fun pay(): String {
         val dateTime = Time.formatTimeToString(Time.getNowTime());
         return "[${bankName}] 결제를 완료했습니다. (${dateTime})";
     }
 }
+
+//팩토리패턴에서 지정해줄껀데
