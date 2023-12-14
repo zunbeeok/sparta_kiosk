@@ -16,9 +16,9 @@ interface Cart {
     fun getCartList():List<Food>;
 
     // cartList의 총금액을 반환한다.
-    fun getTotalPrice():Int;
+    fun getTotalPrice(): Int;
 
     // 카트 목록을 비우는 함수.
-    fun totalDeleteCart():Unit;
+    fun totalDeleteCart(): Unit;
 
 }
