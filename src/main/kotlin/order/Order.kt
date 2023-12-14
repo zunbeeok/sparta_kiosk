@@ -1,5 +1,6 @@
 package order
 
+import bank.Bank
 import data.Food
 
 
@@ -18,4 +19,7 @@ import data.Food
 
    //금액별로 포인트를 출력해주는 함수.
    fun printPointResult():Unit;
+
+    //구매시 print해주는 함수.
+    fun purchase(bank: Bank);
 }

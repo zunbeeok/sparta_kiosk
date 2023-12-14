@@ -1,4 +1,5 @@
 package payment
+import bank.Bank
 import java.time.LocalDateTime
 
 //카카오페이, 네이버페이등 선택해서 다른게 출력 할 수 있게끔
@@ -6,7 +7,7 @@ import java.time.LocalDateTime
 interface Payment {
 
     //결제하는 함수, 결제시에는 현재 시간을 출력해준다.
-    fun payment(money:Int):Int;
+    fun payment(bank:Bank):Int;
 
 
     //은행 리스트를 출력해주는 함수.
