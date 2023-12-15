@@ -7,7 +7,7 @@ import java.time.LocalDateTime
 interface Payment {
 
     //결제하는 함수, 결제시에는 현재 시간을 출력해준다.
-    fun payment(bank:Bank):Int;
+    fun payment(bank: Bank):Unit;
 
 
     //은행 리스트를 출력해주는 함수.

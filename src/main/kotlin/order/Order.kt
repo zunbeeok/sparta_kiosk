@@ -2,6 +2,7 @@ package order
 
 import bank.Bank
 import data.Food
+import enum.BankList
 
 
 //김밥, 분식, 식사, 음료
@@ -21,5 +22,5 @@ import data.Food
    fun printPointResult():Unit;
 
     //구매시 print해주는 함수.
-    fun purchase(bank: Bank);
+    fun purchase(bankName: BankList):Unit;
 }
