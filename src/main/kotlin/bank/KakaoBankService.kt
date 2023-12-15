@@ -12,7 +12,7 @@ class KakaoBankService :Bank{
 
     override val lastInspectionTime: LocalDateTime
 
-    override val pointPercent: Int
+    override val pointPercent: Int;
 
     init {
         this.bankName = "카카오"

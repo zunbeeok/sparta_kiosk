@@ -1,6 +1,7 @@
 package order
 
 import bank.Bank
+import cart.Cart
 import data.Food
 import enum.BankList
 
@@ -16,10 +17,10 @@ import enum.BankList
    //주문 금액의 총 가격을 아래 형태로 return해준다.
    //   [ Total ]
    //   W 6.9
-    fun printOrderToTalPrice(foodList:List<Food>):Unit;
+    fun printOrderToTalPrice(cart:Cart):Unit;
 
    //금액별로 포인트를 출력해주는 함수.
-   fun printPointResult():Unit;
+   fun printPointResult(bank: Bank):Unit;
 
     //구매시 print해주는 함수.
     fun purchase(bankName: BankList):Unit;

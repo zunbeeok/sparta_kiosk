@@ -26,22 +26,13 @@ class CartService: Cart {
         return  cartList
     }
 
-    //인덱스 별로 요소 삭제
-
-    override fun getCartList(): List<Food> {
-        return  cartList
-    }
-
     override fun getTotalPrice(): Int {
-
-        val totalPrice = 0
-
-           for (a in cartList){
-               totalPrice += a
+        var totalPrice:Int = 0
+           for (food in cartList){
+               totalPrice += food.price;
            }
-
-
-        }
+        return totalPrice;
+    }
 
     override fun totalDeleteCart() {
         cartList.clear()

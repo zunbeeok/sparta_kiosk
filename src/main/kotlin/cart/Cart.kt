@@ -12,9 +12,6 @@ interface Cart {
     // getCartList에서 반환되는 index로 카트에 요소를 삭제한다.
     fun deleteCart(index: Int):List<Food>;
 
-    // cartList의 배열을 반환한다.
-    fun getCartList():List<Food>;
-
     // cartList의 총금액을 반환한다.
     fun getTotalPrice(): Int;
 

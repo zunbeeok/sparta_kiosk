@@ -5,6 +5,7 @@ package common
 import java.text.SimpleDateFormat
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
+import java.util.Date
 
 
 // Time은 하나만 생성되고 싶다.
@@ -19,10 +20,6 @@ object Time {
         nowTime = LocalDateTime.now();
     }
 
-    //현재 시간을 조회하는 함수
-    fun getNowTime():LocalDateTime{
-        return nowTime;
-    }
 
     // input시간과 현재시간을 비교해서 return 해주는 함수 작을 경우 0, 같을 경우 1, 클 경우 2
     fun compareTime(compareTime:LocalDateTime):Int{
@@ -37,7 +34,8 @@ object Time {
 
     //"yyyy-MM-dd HH:mm:ss"형식으로 반환.
     fun formatTimeToString(input:LocalDateTime):String{
-        return SimpleDateFormat(dateTimePattern).format(input);
+        return input.format(DateTimeFormatter.ofPattern(dateTimePattern));
+//        return DateTimeFormatter(dateTimePattern).format(input);
     }
 
 

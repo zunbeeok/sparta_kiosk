@@ -11,7 +11,7 @@ class CreditCardBankService :Bank{
 
     override val lastInspectionTime: LocalDateTime
 
-    override val pointPercent: Int
+    override val pointPercent: Int;
 
     init {
         this.bankName = "하나"

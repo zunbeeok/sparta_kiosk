@@ -25,9 +25,9 @@ interface Bank {
     }
 
     //은행별 포인트를 리턴하는 타입.
-    fun getPointPercent(): Int {
-        return pointPercent;
-    }
+//    fun getPointPercent(): Int {
+//        return pointPercent;
+//    }
 
     //결제가 가능한지 확인하는 함수.
     fun checkPayment(balance:Int ,price:Int):Boolean{
@@ -36,7 +36,7 @@ interface Bank {
     };
 
     fun pay(): String {
-        val dateTime = Time.formatTimeToString(Time.getNowTime());
+        val dateTime = Time.formatTimeToString(Time.nowTime);
         return "[${bankName}] 결제를 완료했습니다. (${dateTime})";
     }
 }
