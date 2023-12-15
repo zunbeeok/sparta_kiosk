@@ -1,6 +1,5 @@
 package payment
 
-<<<<<<< HEAD
 import bank.Bank
 
 class PaymentService:Payment {
@@ -13,7 +12,3 @@ class PaymentService:Payment {
     }
 
 }
-=======
-//class PaymentService:Payment {
-//}
->>>>>>> c12e72e68ba12f524c5b0c5cc928ae646300cc23
