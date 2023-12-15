@@ -9,7 +9,7 @@ class OrderService : Order {
     override fun printCartList(foodList: List<Food>) {
         println("[ Orders ]")
         for (food in foodList) {
-            println("${food.index}. ${food.name}   | ${food.index} | ${food.price}")
+            println("${food.index}. ${food.name}   | ${food.price} | ${food.comment}")
 
         }
     }
